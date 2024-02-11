@@ -51,7 +51,6 @@ export default function Header() {
                 >
                   About
                 </NavLink>
-
                 
               </li>
 
@@ -64,11 +63,7 @@ export default function Header() {
                 >
                   Contact
                 </NavLink>
-
-                
               </li>
-
-              
               <li>
                 <NavLink
                 to="/github"
@@ -78,8 +73,6 @@ export default function Header() {
                 >
                   Github
                 </NavLink>
-
-                
               </li>
             </ul>
           </div>

@@ -46,6 +46,7 @@ useEffect(() =>{
         <input type="text" value={password} className='outline-none w-full py-1 px-3 rounded-md' placeholder='Password'
         readOnly ref={passwordRef}/>
 
+        <button onClick={passwordGenerator} className='bg-gray-600 px-2 py-2 rounded-lg text-white mx-1'>Generate</button>
         <button onClick={copyPasswordToClipboard} className='px-3 py-0.5 bg-blue-700 text-white mx-2 rounded-md shrink-0 '>Copy</button>
       </div>
       <div className='flex text-sm gap-x-2'>
