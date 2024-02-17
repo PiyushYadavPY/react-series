@@ -39,11 +39,11 @@ useEffect(() =>{
 } ,[length , numAllowed , charAllowed , passwordGenerator])
   return (
     <>
-    <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3
-     my-8 text-orange-500 bg-gray-800'>
-      <h1 className='text-white text-center my-3'>Passwod generator</h1>
+    <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-8 py-6
+     my-8 text-orange-500 bg-gray-800 mt-40'>
+      <h1 className='text-white text-center text-2xl my-3'>Passwod generator</h1>
       <div className='flex shadow rounded-lg overflow-hidden mb-4'>
-        <input type="text" value={password} className='outline-none w-full py-1 px-3 rounded-md' placeholder='Password'
+        <input type="text" value={password} className='outline-none w-full py-1 px-3 rounded-md text-black' placeholder='Password'
         readOnly ref={passwordRef}/>
 
         <button onClick={passwordGenerator} className='bg-gray-600 px-2 py-2 rounded-lg text-white mx-1'>Generate</button>
