@@ -27,7 +27,7 @@ export class Service {
           userId,
         }
       );
-    } catch {
+    } catch (error) {
       console.log("Appwrite service :: createPost :: error", error);
     }
   }
@@ -92,7 +92,11 @@ export class Service {
 
   async uploadFile(file) {
     try {
-      conf.appwriteBucketId, ID.unique(), file;
+      return await this.bucket.createFile(
+        conf.appwriteBucketId,
+        ID.unique(),
+        file
+      );
     } catch (error) {
       console.log("Appwrite service :: uploadFile:: error", error);
       return false;

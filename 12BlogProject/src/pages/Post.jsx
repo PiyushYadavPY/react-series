@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import appwriteService from "../appwrite/config";
-import { Button } from "../components";
+import { Button, Container } from "../components";
 import parse from "html-react-parser";
 import { useSelector } from "react-redux";
 function Post() {
@@ -34,7 +34,6 @@ function Post() {
           <img
             src={appwriteService.getFilePreview(post.featuredImage)}
             alt={post.title}
-            className="rounded-xl"
           />
           {isAuthor && (
             <div className="absolute right-6 top-6">
